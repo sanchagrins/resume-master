@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% One Page Two Column Resume based off deedy_resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% Modified by: sanchagrins
+% https://github.come/sanchagrins
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{sanchagrins-resume}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Stephen}{Sanchagrin}{{\href{mailto:sanchagrins@gmail.com}{\faEnvelope \hspace{2mm} sanchagrins@gmail.com} | {\href{https://sanchagrins.github.io}{\faGlobe \hspace{2mm}sanchagrins.github.io}} | {\href{https://github.com/sanchagrins}{\faGithub \hspace{2mm}sanchagrins}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\topsep} 
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\runsubsection{University of Maryland - University College}\\
+\descript{BS in Computer Science}
+\location{May 2018 (Expected) | Adelphi, ST}
+\location{GPA: 4.0 / 4.0 }
+\sectionsep
+
+\runsubsection{East Carolina University}\\
+\descript{MA in History}
+\location{May 2014 | Greenville, NC}
+\location{GPA: 3.78 / 4.0}
+\sectionsep
+
+\runsubsection{East Carolina University}\\
+\descript{BS in Applied Geography}
+\location{Dec 2007 | Greenville, NC}
+Magna Cum Laude\\
+\location{GPA: 3.73 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\runsubsection{Proficient:}\\
+Java, Python, Go, \\
+Git, Maven, JUnit, \\ 
+TDD/Unit Testing,\\
+React, Node, Django,\\
+Heroku, HTML, CSS, \\
+Bootstrap, JSON, LaTex, \\
+Linux
+\vspace{\topsep}\\
+\runsubsection{Familiar:}\\
+C++, Agile, MariaDB  \\
+MongoDB, AWS lightsail, \\
+Shell Scripting \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Coursework
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework} 
+Data Structures, Algorithms, Advanced Programming Languages,
+Operating Systems, Computer Systems Architecture,
+Linear Algebra, Discrete Math, Object Oriented and Concurrent Programming 
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Certifications} 
+%CompTIA Security +
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+{\href{https://github.com/sancahgrins}{\faGithub \hspace{2mm}github.com/sanchagrins}}\\
+{\href{https://www.linkedin.com/in/sanchagrins}{\faLinkedinSquare \hspace{2mm}linkedin.com/in/sanchagrins}}\\
+{\href{https://sanchagrins.github.io}{\faGlobe \hspace{2mm}sanchagrins.github.io}}
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.63\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Dewberry, LLC}\descript{ | Geospatial Analyst (Python/Agile)}
+\location{Aug 2013 – Sep 2014 | Fairfax, VA}
+\vspace{\topsep}
+\begin{tightemize}
+\item Restructured company hydrodynamic inundation model process by incorporating Python and spatial statistical libraries.
+\item Decreased model runtime through automation and optimization by roughly 50\%.
+\item Delivered high value projects (\$150k+) on time and under budget.
+\item Published map services to cloud based hosting platforms.
+\end{tightemize}
+
+\sectionsep
+\runsubsection{RENCI@ECU}\descript{ | Geospatial Analyst (Python)}
+\location{May 2008 – Jun 2012 | Greenville, NC}
+\begin{tightemize}
+\item Developed complex geospatial models with Python and spatial statistical software of coastal processes.
+\item Analyzed model spatial resolution using a Monte Carlo simulation.
+\item Web development (HTML, CSS, JS).
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\runsubsection{Okami Cryptocurrency Tracker}
+\descript{| Project Manager\\React / Node.js / MariaDB / Heroku / Git }
+\begin{tightemize}
+\item Supervised 5-developer team.
+\item Designed application architecture and deployment strategy.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Go Neural Net}
+\descript{| Developer\\Go / Git }
+\begin{tightemize}
+\item Implemented two-layer neural network.
+\item Utilized back-propagation for weight adjustment with Sigmoid activation function
+\item Developed a custom Linear Algebra library.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Django Slack Invite}
+\descript{| Developer \\Python / Django / Selenium / Heroku / Git}
+\begin{tightemize}
+\item A barebones Django app for automating the invite process for Slack.
+\item Easily deployable with integrated Heroku support.
+\item Designed utilizing Test Driven Design (TDD) and Selenium.
+\item Documentation created with Sphinx.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Java GUI-Compiler}
+\descript{| Developer\\Java Swing / Maven / JUnit / Git}
+\begin{tightemize}
+\item Custom parser and lexer developed for a BNF GUI grammar.
+\item Reads in a source file and builds custom Java Swing GUIs.
+\item Dependency resolution, unit testing and artifact creation handled with Maven.
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{Class Project}
+%\descript{| Java / Maven / JUnit}
+%\begin{tightemize}
+%\item Makes data request to NOAA National Buoy Data Center and calculates descriptive statistics from buoy data.
+%\item Dependency resolution, unit testing and artifact creation handled with Maven.
+%\end{tightemize}
+%\sectionsep
+
+\runsubsection{CS Resume Reddit Bot}
+\descript{| Developer\\Python / Tesseract / MongoDB / Git }
+\begin{tightemize}
+\item Reddit bot that scrapes a popular Computer Science sub-reddit for resumes.
+\item Resumes are preprocessed with a custom image filter and parsed with the open source Tesseract Optical Character Recognition Engine.
+\item Extracted data is stored in a MongoDB and analyzed using descriptive statistics.
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
